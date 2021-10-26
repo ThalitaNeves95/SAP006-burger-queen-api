@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "username": "yluxvwnguiatzt",
+    "password": "66d4141a987832b2cac219e7b1fa8d5774aa3b00e89549a3ff9f82a9d83f93d1",
+    "database": "d7hnauucoqoqt1",
+    "host": "ec2-52-3-239-135.compute-1.amazonaws.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {

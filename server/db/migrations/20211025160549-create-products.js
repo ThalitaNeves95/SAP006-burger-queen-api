@@ -1,7 +1,7 @@
-// 'use strict';
+// é o que aparece na tabela
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('testes', {
+    await queryInterface.createTable('products', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,7 +11,22 @@ module.exports = {
       name: {
         type: Sequelize.STRING,
       },
-      surname: {
+      flavor: {
+        type: Sequelize.STRING,
+      },
+      complement: {
+        type: Sequelize.STRING,
+      },
+      price: {
+        type: Sequelize.INTEGER,
+      },
+      image: {
+        type: Sequelize.STRING,
+      },
+      type: {
+        type: Sequelize.STRING,
+      },
+      sub_type: {
         type: Sequelize.STRING,
       },
       createdAt: {
@@ -25,6 +40,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('testes');
+    await queryInterface.dropTable('products');
   },
 };
